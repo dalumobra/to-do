@@ -57,15 +57,6 @@ function App() {
         onLoading={() => <ToDoLoading/>}
         onEmptyToDos={() => <ToDoEmpty />}
         onEmptySearchResults={(message) => <ToDoEmptySearch searchText={message}/>}
-        // render={todo => (
-        //   <ToDoItem 
-        //     key={todo.id.toString()}
-        //     text={todo.text}
-        //     completed={todo.complete}
-        //     onComplete={() => completeTodos(todo.id)}
-        //     onDelete={() => deleteTodos(todo.id)}
-        //   />
-        // )}
       >
         {todo => (
           <ToDoItem 
